@@ -1,0 +1,1957 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DepthMap.ico"
+IDR_GRAPHTYPE2          ICON                    "res\\idr_main.ico"
+IDR_GRAPHTYPE3          ICON                    "res\\ico00001.ico"
+IDR_GRAPHTYPE           ICON                    "res\\ico00002.ico"
+IDR_GRAPHTYPE4          ICON                    "res\\idr_grap.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_OLDTOOLS            BITMAP                  "res\\bmp00003.bmp"
+IDR_AGENT_TOOLBAR       BITMAP                  "res\\agent_to.bmp"
+IDB_ACCEPT              BITMAP                  "res\\bitmap.bmp"
+IDR_COLUMN_EDITOR_TOOLBAR BITMAP                  "res\\bmp00005.bmp"
+IDR_COLUMN_EDITOR_TOOLBAR1 BITMAP                  "res\\column_e.bmp"
+IDR_COLUMN_EDITOR_TOOLBAR2 BITMAP                  "res\\bmp00004.bmp"
+IDB_STATEICONS          BITMAP                  "res\\sideicon.bmp"
+IDB_SPLASH2             BITMAP                  "res\\dephmapsplash3.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_IMPORT
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_ADD_COLUMN
+    BUTTON      ID_UPDATE_COLUMN
+    BUTTON      ID_REMOVE_COLUMN
+    BUTTON      ID_PUSH_TO_LAYER
+    SEPARATOR
+    BUTTON      ID_SWAP_COLOURS
+END
+
+IDR_OLDTOOLS TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_EDIT_PIN
+    BUTTON      ID_EDIT_ERASER
+    SEPARATOR
+    BUTTON      ID_FILL_SELECTION
+    BUTTON      ID_EDIT_FIXGRID
+    BUTTON      ID_BUTTON32933
+    BUTTON      ID_EDIT_SEMIFILL
+    BUTTON      ID_PUSH_TO_LAYER
+    BUTTON      ID_ADD_GATE
+END
+
+IDR_AGENT_TOOLBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_TOOLS_CLEAR_AGENTS
+    BUTTON      ID_MODE_ADD_AGENT
+    BUTTON      ID_TOOLS_CANCEL_AGENTS
+    BUTTON      ID_TOOLS_AGENT_RUN
+    BUTTON      ID_TOOLS_AGENT_LOAD_PROGRAM
+END
+
+IDR_COLUMN_EDITOR_TOOLBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_SWAP_COLOURS
+    SEPARATOR
+    BUTTON      ID_ADD_COLUMN
+    BUTTON      ID_UPDATE_COLUMN
+    BUTTON      ID_REMOVE_COLUMN
+    SEPARATOR
+    BUTTON      ID_PUSH_TO_LAYER
+END
+
+IDR_COLUMN_EDITOR_TOOLBAR1 TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_ADD_COLUMN
+    BUTTON      ID_UPDATE_COLUMN
+    BUTTON      ID_REMOVE_COLUMN
+END
+
+IDR_COLUMN_EDITOR_TOOLBAR2 TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_VIEW_COLOR
+    BUTTON      ID_VIEW_ORIGIN
+    BUTTON      ID_VIEW_TREND_LINE
+    BUTTON      ID_VIEW_EQUATION
+    BUTTON      ID_VIEW_RSQUARED
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Properties...",               ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Copy &Data",                  ID_EDIT_COPYDATA
+        MENUITEM "Copy &Screen\tCtrl+C",        ID_EDIT_COPY
+        MENUITEM "&Export Screen...",           ID_EDIT_SAVESCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Clear\tDel",                 ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Select by &Query\tCtrl+Q",    ID_EDIT_QUERY
+        MENUITEM "&Zoom to Selection",          ID_VIEW_ZOOMSEL
+        MENUITEM "Selection to &Layer...",      ID_EDIT_SELECT_TO_LAYER
+    END
+    POPUP "&Map"
+    BEGIN
+        MENUITEM "&New...",                     ID_LAYER_NEW
+        MENUITEM "&Delete...",                  ID_LAYER_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Convert Active Map...",      ID_LAYER_CONVERT
+        MENUITEM "Convert Drawing &Map...",     ID_LAYER_CONVERT_DRAWING
+        MENUITEM "Convert Map &Shapes...",      ID_CONVERT_MAP_SHAPES
+        MENUITEM SEPARATOR
+        MENUITEM "&Import...\tCtrl+I",          ID_FILE_IMPORT
+        MENUITEM "&Export...\tCtrl+E",          ID_FILE_EXPORT
+    END
+    POPUP "&Attributes"
+    BEGIN
+        MENUITEM "&Add Column...",              ID_ADD_COLUMN
+        MENUITEM SEPARATOR
+        MENUITEM "&Rename Column...",           ID_RENAME_COLUMN
+        MENUITEM "&Edit Column...",             ID_UPDATE_COLUMN
+        MENUITEM "&Delete Column...",           ID_REMOVE_COLUMN
+        MENUITEM "Column &Properties...",       ID_COLUMN_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "Push &Values to Map...",      ID_PUSH_TO_LAYER
+    END
+    POPUP "&Tools"
+    BEGIN
+        POPUP "&Visibility"
+        BEGIN
+            MENUITEM "Set &Grid...",                ID_EDIT_GRID
+            MENUITEM "Make &Visibility Graph...",   ID_TOOLS_MAKE_GRAPH
+            MENUITEM "Make &Isovist Path...",       ID_TOOLS_ISOVISTPATH
+            MENUITEM SEPARATOR
+            MENUITEM "&Run Visibility Graph Analysis...", ID_TOOLS_RUN
+            POPUP "Step &Depth"
+            BEGIN
+                MENUITEM "&Visibility Step\tCtrl+D",    ID_TOOLS_PD
+                MENUITEM "&Metric Step",                ID_TOOLS_MPD
+                MENUITEM "&Angular Step",               ID_TOOLS_APD
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Convert Data Map Lines to Merge Points", ID_TOOLS_POINT_CONSHAPEMAP
+        END
+        POPUP "&Agent Tools"
+        BEGIN
+            MENUITEM "&Run Agent Analysis",         ID_TOOLS_AGENT_RUN
+            MENUITEM "&Load Agent Program",         ID_TOOLS_AGENT_LOAD_PROGRAM
+        END
+        POPUP "A&xial / Convex / Pesh"
+        BEGIN
+            MENUITEM "&Run Graph Analysis...",      ID_TOOLS_RUN_AXA
+            MENUITEM "Step &Depth\tCtrl+D",         ID_TOOLS_PD
+            MENUITEM SEPARATOR
+            MENUITEM "Reduce to &Fewest Line Map...", ID_TOOLS_MAKE_FLM
+            MENUITEM SEPARATOR
+            MENUITEM "Convert Data Map Points to Unlinks", ID_TOOLS_AXIAL_CONVSHAPEMAP
+            MENUITEM "Load Unlinks from File...",   ID_TOOLS_LINE_LOADUNLINKS
+        END
+        POPUP "&Segment"
+        BEGIN
+            MENUITEM "&Run Angular Segment Analysis...", ID_TOOLS_RUN_SEG
+            MENUITEM "Run &Topological or Metric Analysis...", ID_TOOLS_TOPOMET
+            POPUP "Step &Depth"
+            BEGIN
+                MENUITEM "&Angular Step\tCtrl+D",       ID_TOOLS_PD
+                MENUITEM "&Topological Step",           ID_TOOLS_PD_TOPO
+                MENUITEM "&Metric Step",                ID_TOOLS_PD_METRIC
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Options...",                  ID_TOOLS_OPTIONS
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Background...",              ID_WINDOW_BACKGROUND
+        MENUITEM "&Foreground...",              ID_WINDOW_FOREGROUND
+        MENUITEM SEPARATOR
+        MENUITEM "&Recentre View",              ID_VIEW_CENTREVIEW
+        MENUITEM "Show &Grid",                  ID_VIEW_SHOWGRID
+        MENUITEM "&Attribute Summary...",       ID_VIEW_SUMMARY
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Map",                        ID_WINDOW_MAP
+        MENUITEM "&Scatter Plot",               ID_VIEW_SCATTERPLOT
+        MENUITEM "&Table",                      ID_WINDOW_TABLE
+        MENUITEM "&3D View",                    ID_WINDOW_3DVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "&Colour Range",               ID_VIEW_COLOURRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "C&ascade",                    ID_WINDOW_CASCADE
+        MENUITEM "T&ile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "A&rrange Icons",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Online &Alerts",              ID_HELP_ALERTS
+        MENUITEM "Online &Handbook",            ID_HELP_MANUAL
+        MENUITEM "Online &Tutorials",           ID_HELP_TUTORIALS
+        MENUITEM "Online &Scripting Manual",    ID_HELP_SALA_MANUAL
+        MENUITEM SEPARATOR
+        MENUITEM "About &Depthmap...",          ID_APP_ABOUT
+    END
+END
+
+IDR_TEMP MENU 
+BEGIN
+    MENUITEM "Temp",                        65535
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "D",            ID_TOOLS_PD,            VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_FILE_EXPORT,         VIRTKEY, CONTROL, NOINVERT
+    "G",            ID_ADD_GATE,            VIRTKEY, CONTROL, NOINVERT
+    "I",            ID_FILE_IMPORT,         VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CLEAR,          VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 245, 191
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Depthmap"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "http://www.depthmap.org/",IDC_VRLINK,90,155,120,9,SS_NOTIFY
+    DEFPUSHBUTTON   "OK",IDOK,188,170,50,14,WS_GROUP,WS_EX_TRANSPARENT
+    LTEXT           "Originally developed by\nAlasdair Turner\nBartlett School of Graduate Studies\nUniversity College London, Gower Street, London, WC1E 6BT",IDC_STATIC,7,118,231,34
+    LTEXT           "UCL Depthmap",IDC_STATIC,32,6,50,8
+    LTEXT           "Copyright message (overwritten at runtime)",IDC_COPYRIGHT,7,29,231,20
+    LTEXT           "Version information",IDC_VERSION,32,16,206,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,6,21,20
+    LTEXT           "For more information see ",IDC_STATIC,7,155,82,8
+    LTEXT           "With thanks to Alan Penn, Chiron Mottram, Maria Doxa, Dave Chapman,\nSpace Syntax Limited, and the staff and students of the MSc AAS at UCL",IDC_STATIC,7,97,231,19
+    EDITTEXT        IDC_LICENCE,7,51,231,42,ES_MULTILINE | ES_READONLY | WS_VSCROLL
+END
+
+IDR_MAINFRAME DIALOG  0, 0, 330, 16
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_DIALOG_BAR DIALOG  0, 0, 159, 12
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_VIEW_SELECTOR,0,0,159,75,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_FILE_EXPORT DIALOG  0, 0, 200, 109
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Export"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Export Attribute Data",IDC_EXPORT_TYPE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,7,77,10
+    CONTROL         "Export ASCII Graph",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,7,20,73,10
+    CONTROL         "Export Layer:",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,7,33,55,10
+    CONTROL         "Export Bin Summaries",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,7,46,82,10
+    EDITTEXT        IDC_SAVEAS,37,63,100,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BROWSE,143,63,50,14
+    DEFPUSHBUTTON   "OK",IDOK,87,88,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,143,88,50,14
+    LTEXT           "Save as",IDC_STATIC,7,62,27,14,SS_CENTERIMAGE
+    COMBOBOX        IDC_LAYERCOMBO,66,32,71,45,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROMPTREPLACE DIALOGEX 0, 0, 175, 64
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Depthmap"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Add",ID_ADD,13,44,47,13
+    PUSHBUTTON      "Cancel",IDCANCEL,115,44,47,13
+    PUSHBUTTON      "Replace",ID_REPLACE,64,44,47,13
+    LTEXT           "You already have line data loaded.  Do you want to add this new file to the existing line data, replace the existing line data, or cancel?",IDC_MESSAGE,7,7,161,34
+END
+
+IDD_FEWESTOPTIONS DIALOG  0, 0, 152, 74
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Make Fewest Line Map Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Remove all subsets",IDC_FEWESTOPTION,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,7,13,138,10
+    CONTROL         "Reduce to fewest connections",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,7,27,138,10
+    DEFPUSHBUTTON   "OK",IDOK,40,53,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,95,53,50,14
+END
+
+IDD_SIDEBAR DIALOGEX 0, 0, 78, 245
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_ATTRIBUTE_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | WS_TABSTOP,0,109,75,135,WS_EX_STATICEDGE
+    CONTROL         "",IDC_SIDEBAR_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_TABSTOP,0,0,75,100,WS_EX_STATICEDGE
+END
+
+IDD_AXIAL_ANALYSIS_OPTIONS DIALOG  0, 0, 186, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Axial Analysis Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Radius / list of radii, e.g., 2,3,n",IDC_STATIC,31,10,104,8
+    EDITTEXT        IDC_RADIUS,31,21,127,14,ES_AUTOHSCROLL
+    CONTROL         "Include choice (betweenness)",IDC_CHOICE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,31,40,127,10
+    CONTROL         "Include weighted measures",IDC_WEIGHTED,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | BS_LEFT | WS_TABSTOP,31,84,127,10
+    LTEXT           "Weight by",IDC_STATIC,31,98,43,8
+    COMBOBOX        IDC_ATTRIBUTE_CHOOSER,31,109,127,55,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,71,133,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,133,50,14
+    CONTROL         "Include RA, RRA and total depth",IDC_INCLUDE_RA,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,31,70,127,10
+    CONTROL         "Include local measures",IDC_LOCAL,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,31,55,127,10
+END
+
+IDD_SEGMENT_ANALYSIS_OPTIONS DIALOG  0, 0, 200, 262
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Segment Analysis Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Analysis Type",IDC_STATIC,7,7,186,98
+    CONTROL         "Tulip Analysis (Faster)",IDC_ANALYSIS_TYPE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,15,20,94,10
+    CONTROL         "Full Angular (Slower)",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,17,84,83,10
+    RTEXT           "Tulip Bins (4 to 1024)",IDC_STATIC,16,37,81,8
+    EDITTEXT        IDC_TULIP_BINS,105,35,40,14,ES_AUTOHSCROLL
+    LTEXT           "(1024 approximates full angular analysis)",IDC_STATIC,31,52,143,8
+    CONTROL         "Include choice (betweenness)",IDC_CHOICE,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | WS_TABSTOP,31,67,113,10
+    GROUPBOX        "Radius Type",IDC_STATIC,7,109,186,74
+    CONTROL         "Segment Steps",IDC_RADIUS_TYPE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,17,122,70,10
+    CONTROL         "Metric",IDC_TYPE_METRIC,"Button",BS_AUTORADIOBUTTON,17,135,44,10
+    CONTROL         "Angular",IDC_TYPE_ANGULAR,"Button",BS_AUTORADIOBUTTON,92,135,45,10
+    LTEXT           "Radius / List of radii",IDC_STATIC,17,149,80,8
+    EDITTEXT        IDC_RADIUS,17,161,168,14,ES_AUTOHSCROLL
+    GROUPBOX        "Weighted measures",IDC_STATIC,7,187,186,47
+    CONTROL         "Include weighted measures",IDC_WEIGHTED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,200,114,10
+    LTEXT           "Weight by",IDC_STATIC,17,216,40,8
+    COMBOBOX        IDC_ATTRIBUTE_CHOOSER,59,214,127,55,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,86,241,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,143,241,50,14
+END
+
+IDD_FILEPROPERTIES DIALOG  0, 0, 187, 224
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Graph File Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TITLE,51,7,129,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOCATION,51,27,129,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DESCRIPTION,51,47,129,48,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_AUTHOR,51,101,129,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ORGANIZATION,51,121,129,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CREATE_DATE,51,141,129,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_CREATE_PROGRAM,51,161,129,14,ES_AUTOHSCROLL | ES_READONLY
+    DEFPUSHBUTTON   "OK",IDOK,74,203,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,203,50,14
+    LTEXT           "Author",IDC_STATIC,7,105,39,8
+    LTEXT           "Organization",IDC_STATIC,7,123,39,8
+    LTEXT           "Created on",IDC_STATIC,7,144,34,8
+    LTEXT           "Created by",IDC_STATIC,7,164,41,8
+    LTEXT           "Title",IDC_STATIC,7,9,37,8
+    LTEXT           "Location",IDC_STATIC,7,28,37,8
+    LTEXT           "Description",IDC_STATIC,7,48,39,8
+    EDITTEXT        IDC_FILE_VERSION,51,181,129,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "File version",IDC_STATIC,7,184,40,8
+END
+
+IDD_INSERT_COLUMN DIALOGEX 0, 0, 327, 165
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Replace Attribute Values"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_FORMULA,"RICHEDIT",TCS_HOTTRACK | TCS_FOCUSONBUTTONDOWN | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_TABSTOP,7,19,203,107
+    LISTBOX         IDC_COLUMN_NAMES,219,19,101,91,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "<< Use attribute",IDC_USE_ATTRIBUTE,219,116,101,10
+    CONTROL         "Apply formula to selected objects only",IDC_SELECTION_ONLY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,130,203,10
+    DEFPUSHBUTTON   "OK",IDOK,213,144,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,270,144,50,14
+    LTEXT           "Existing attributes",IDC_STATIC,219,7,101,8
+    LTEXT           "Formula",IDC_FORMULA_DESC,7,7,203,8
+END
+
+IDD_DIALOG_BAR1 DIALOG  0, 0, 125, 12
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_VIEW_SELECTOR,12,0,113,75,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "x =",IDC_LABEL,0,2,10,8
+END
+
+IDD_AGENT_ANALYSIS DIALOGEX 0, 0, 187, 249
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Agent Anaylsis Setup"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_TIMESTEPS,123,15,52,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_LAYER_SELECTOR,123,33,52,35,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_RELEASE_RATE,123,66,52,14,ES_AUTOHSCROLL
+    CONTROL         "Release from any location",IDC_RELEASE_LOCATION,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,12,81,94,10
+    CONTROL         "Release from selected locations",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,12,93,113,10
+    EDITTEXT        IDC_FOV,123,122,52,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STEPS,123,138,52,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FRAMES,123,156,52,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,77,228,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,228,50,14
+    LTEXT           "Analysis length (timesteps)",IDC_STATIC,13,18,103,8
+    GROUPBOX        "Global setup",IDC_STATIC,7,7,173,44
+    GROUPBOX        "Agent set parameters",IDC_STATIC,7,55,173,53
+    GROUPBOX        "Agent program parameters",IDC_STATIC,7,112,173,66
+    LTEXT           "Release rate (agents per timestep)",IDC_STATIC,12,68,110,8
+    LTEXT           "Field of view (bins)",IDC_STATIC,12,124,92,8
+    LTEXT           "Steps before turn decision",IDC_STATIC,12,140,97,8
+    LTEXT           "Timesteps in system",IDC_STATIC,12,158,92,8
+    LTEXT           "Record gate counts in data map",IDC_STATIC,14,35,106,8
+    LTEXT           "Movement rule:",IDC_STATIC,7,208,50,8
+    COMBOBOX        IDC_OCCLUSION,61,206,119,48,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Record trails for",IDC_RECORD_TRAILS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,184,65,14
+    EDITTEXT        IDC_TRAIL_COUNT,80,184,40,14,ES_AUTOHSCROLL
+    LTEXT           "agents",IDC_STATIC,126,184,22,14,SS_CENTERIMAGE
+END
+
+IDD_RENAME_COLUMN DIALOGEX 0, 0, 187, 80
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Rename Column"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_COLUMN_NAME,7,28,173,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,75,59,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,59,50,14
+    LTEXT           "Rename column to:",IDC_PROMPT,7,16,173,8
+END
+
+IDD_COLUMN_PROPERTIES DIALOGEX 0, 0, 231, 236
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Attribute Properties"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Name",IDC_NAME_TEXT,7,7,217,8
+    EDITTEXT        IDC_NAME,7,18,217,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Values",IDC_STATIC,7,35,22,8
+    CONTROL         "List1",IDC_SUMMARY,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,46,217,73
+    LTEXT           "Formula",IDC_STATIC,7,122,26,8
+    EDITTEXT        IDC_FORMULA,7,133,217,64,ES_MULTILINE | ES_AUTOVSCROLL | ES_READONLY | WS_VSCROLL
+    LTEXT           "Note: the formula may have been applied to a subset of objects",IDC_FORMULA_NOTE,7,200,217,11
+    DEFPUSHBUTTON   "OK",IDOK,174,215,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 10,0,0,0
+ PRODUCTVERSION 10,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "University College London"
+            VALUE "FileDescription", "UCL Depthmap"
+            VALUE "FileVersion", "10.00.00"
+            VALUE "InternalName", "UCL Depthmap"
+            VALUE "LegalCopyright", "(c) 2000-2010 University College London"
+            VALUE "OriginalFilename", "Depthmap.exe"
+            VALUE "ProductName", "UCL Depthmap Application"
+            VALUE "ProductVersion", "10.00.00"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 238
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_FILE_EXPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_PROMPTREPLACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 57
+    END
+
+    IDD_FEWESTOPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 145
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_SIDEBAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 75
+    END
+
+    IDD_AXIAL_ANALYSIS_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_SEGMENT_ANALYSIS_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 193
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_FILEPROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 217
+    END
+
+    IDD_INSERT_COLUMN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_AGENT_ANALYSIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_RENAME_COLUMN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_COLUMN_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 229
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FILE_EXPORT DLGINIT
+BEGIN
+    IDC_LAYERCOMBO, 0x403, 6, 0
+0x6147, 0x6574, 0x0073, 
+    IDC_LAYERCOMBO, 0x403, 11, 0
+0x7441, 0x7274, 0x6361, 0x6f74, 0x7372, "\000" 
+    0
+END
+
+IDD_AGENT_ANALYSIS DLGINIT
+BEGIN
+    IDC_OCCLUSION, 0x403, 9, 0
+0x7453, 0x6e61, 0x6164, 0x6472, "\000" 
+    IDC_OCCLUSION, 0x403, 21, 0
+0x694c, 0x656e, 0x6f20, 0x2066, 0x6953, 0x6867, 0x2074, 0x654c, 0x676e, 
+0x6874, "\000" 
+    IDC_OCCLUSION, 0x403, 16, 0
+0x634f, 0x6c63, 0x6475, 0x6465, 0x4c20, 0x6e65, 0x7467, 0x0068, 
+    IDC_OCCLUSION, 0x403, 15, 0
+0x6e41, 0x2079, 0x636f, 0x6c63, 0x7375, 0x6f69, 0x736e, "\000" 
+    IDC_OCCLUSION, 0x403, 35, 0
+0x634f, 0x6c63, 0x7375, 0x6f69, 0x736e, 0x4720, 0x6f72, 0x7075, 0x6220, 
+0x6e69, 0x2073, 0x3428, 0x2035, 0x6564, 0x7267, 0x6565, 0x2973, "\000" 
+    IDC_OCCLUSION, 0x403, 35, 0
+0x634f, 0x6c63, 0x7375, 0x6f69, 0x736e, 0x4720, 0x6f72, 0x7075, 0x6220, 
+0x6e69, 0x2073, 0x3628, 0x2030, 0x6564, 0x7267, 0x6565, 0x2973, "\000" 
+    IDC_OCCLUSION, 0x403, 27, 0
+0x7546, 0x7472, 0x6568, 0x7473, 0x6f20, 0x6363, 0x756c, 0x6973, 0x6e6f, 
+0x7020, 0x7265, 0x6220, 0x6e69, "\000" 
+    IDC_OCCLUSION, 0x403, 30, 0
+0x6550, 0x2072, 0x6962, 0x206e, 0x6166, 0x2072, 0x6964, 0x7473, 0x6e61, 
+0x6563, 0x7720, 0x6965, 0x6867, 0x6574, 0x0064, 
+    IDC_OCCLUSION, 0x403, 23, 0
+0x6550, 0x2072, 0x6962, 0x206e, 0x6e61, 0x6c67, 0x2065, 0x6577, 0x6769, 
+0x7468, 0x6465, "\000" 
+    IDC_OCCLUSION, 0x403, 40, 0
+0x6550, 0x2072, 0x6962, 0x206e, 0x6166, 0x2072, 0x6964, 0x7473, 0x6e61, 
+0x6563, 0x6120, 0x646e, 0x6120, 0x676e, 0x656c, 0x7720, 0x6965, 0x6867, 
+0x6574, 0x0064, 
+    IDC_OCCLUSION, 0x403, 15, 0
+0x6550, 0x2072, 0x6962, 0x206e, 0x656d, 0x6f6d, 0x7972, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ERASE               CURSOR                  "res\\cur00005.cur"
+IDC_CROSSCURSOR         CURSOR                  "res\\cur00006.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "UCL Depthmap 10"
+    IDR_GRAPHTYPE           "\nGraph\nGraph\nGraph Files (*.graph)\n.graph\nGraph.Document\nGraph Document"
+    IDR_GRAPHTYPE2          "Dummy"
+    IDR_GRAPHTYPE3          "Dummy 2"
+    IDR_GRAPHTYPE4          "Dummy 3"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Depthmap"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new graph workspace\nNew Workspace"
+    ID_FILE_OPEN            "Open an existing graph workspace file\nOpen Workspace"
+    ID_FILE_CLOSE           "Close the active graph workspace\nClose Workspace"
+    ID_FILE_SAVE            "Save the active graph workspace\nSave workspace"
+    ID_FILE_SAVE_AS         "Save the active graph workspace with a new name\nSave Workspace As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active graph workspace\nPrint Workspace"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this graph workspace"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the screen contents to clipboard\nCopy Screen"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+    ID_SIDEBAR              "The main side bar control"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MOVE                 "Move\nMove"
+    ID_ZOOM                 "Zoom\nZoom"
+    ID_FILL                 "Fill the DXF with grid points\nFill"
+    ID_ERASE                "Erase grid points\nErase"
+    ID_FILE_IMPORT          "Import a DXF or points file\nImport Map"
+    ID_FILE_EXPORT          "Export the active map\nExport Map"
+    ID_IMPORT               "Import a DXF or points file into the graph\nImport"
+    ID_VIEW_MOVE            "Click and drag to move map\nDrag"
+    ID_VIEW_ZOOM            "Zoom into or out of (using Alt-key) view of map\nZoom"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_FILL            "Fill grid spaces with points\nFill"
+    ID_EDIT_ERASE           "Erase points from grid\nErase"
+    ID_INDICATOR_POSITION   "                                 "
+    ID_INDICATOR_DIMENSIONS "                                 "
+    ID_INDICATOR_POINTS     "             "
+    ID_VIEW_ZOOM_IN         "Zoom into view of map\nZoom In"
+    ID_VIEW_ZOOM_OUT        "Zoom out of view of map\nZoom"
+    ID_EDIT_SELECT          "Select a grid point\nSelect"
+    ID_TOOLS_ALLOCATEREFERENCES "Allocate reference numbers to grid points"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_ATTRIBUTES      "View attributes\nView attributes"
+    ID_VIEW_CONNECTIONS     "View connections\nView connections"
+    ID_VIEW_GATES           "Temporary while deciding what to do with layers\nView gates"
+    ID_VIEW_BOUNDARIES      "Temporary while deciding what to do with layers\nView boundaries"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_PENCIL          "Fill grid spaces individually (right click to block spaces)\nPencil"
+    ID_EDIT_PENCIL2         "Add grid points to the DXF\nAdd Point"
+    ID_TOOL_PD              "Point depth from current selection\nPoint Depth"
+    ID_EDIT_RANDOM2         "Prepare a 500x500 random grid\nRandom Grid"
+    ID_EDIT_PIN             "Pin/Unpin current selection\nPin/Unpin"
+    ID_TOOLS_PD             "Step depth from current selection\nStep Depth"
+    ID_EDIT_CONNECTIONS     "Link selected sets together"
+    ID_TOOLS_AA             "Angular Analysis\nAngular Analysis"
+    ID_TOOLS_ADD_AGENT      "Click on a point to add an agent\nAdd Agent"
+    ID_HELP_UPGRADELICENCE  "Select to modify your licence information"
+    ID_HELP_MANUAL          "View the Depthmap Researchers' Handbook online"
+    ID_TOOLS_AL             "Make axial lines\nAxial Lines"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOLS_CANCEL_AGENTS  "End agent simulation"
+    ID_TOOLS_CLEAR_AGENTS   "Clear agent trails"
+    ID_ADD_GATE             "Turns the current point selection into a shape map object [Ctrl+G]\nConvert to Shape"
+    ID_TOOLS_CANCEL_AGENTS2 "End agent simulation"
+    ID_PUSH_TO_LAYER        "Push values from active map to another map\nPush Values"
+    ID_TOOLS_CLEAR_AGENTS2  "Clear agent trails"
+    ID_ADD_GATE2            "Turns the current selection into a layer object [Ctrl+G]\nAdd Layer Object"
+    ID_PUSH_TO_LAYER3       "Push displayed values to gates layer\nPush Values"
+    ID_EDIT_SAVESCREEN      "Export the screen as an Encapsulated Postscript file\nExport Screen"
+    ID_EDIT_GRID            "Overlay grid on plan\nSet Grid"
+    ID_EDIT_FIXGRID         "Block visibilty through lines\nBlock lines"
+    ID_VIEW_SHOWGRID        "Display grid"
+    ID_EDIT_FIXGRID2        "Block visibilty through lines\nBlock lines"
+    ID_MODE_MERGE           "Join two points together\nJoin"
+    ID_MODE_JOIN            "Join points together\nJoin"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDITFIX_FILL         "Fill lines with VGA locations\nFill lines"
+    ID_EDIT_FIXFILL         "Use lines as visibility graph locations\nFill lines"
+    ID_EDIT_FIXFILL2        "Use lines as visibility graph locations\nFill lines"
+    ID_EDIT_ERASER          "Erase filled grid (right click to erase blocked squares)\nErase"
+    ID_EDIT_LINETOOL        "Line\nLine"
+    ID_EDIT_ERASER2         "Erase filled grid (right click to erase blocked squares)\nErase"
+    ID_EDIT_LINETOOL2       "Line\nLine"
+    ID_TOOLS_MPD            "Distance from current selection\nMetric Depth"
+    ID_TESTBUTTON           "A dummy button to test features\nDummy button"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_ATTRACTORS      "Temporary while deciding what to do with layers\nView attractors"
+    ID_VIEW_AGENTS          "View agents\nView agents"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PUSH_TO_LAYER2       "Push to layer averaged\nPush currently displayed attribute to current layer averaged over isovist"
+    ID_EVOAGENT             "Evolutionary agents"
+    ID_BINDISPLAY           "Display bins"
+    ID_TOOLS_AL2            "Construct all line axial map from a seed point\nAxial Map"
+    ID_TOOLS_AL3            "Axial lines"
+    ID_TOOLS_RUN_AXA        "Analyse currently displayed axial line map\nAxial analysis"
+    ID_VIEW_VGALAYERS_BRINGTOTOP "Bring VGA layers to top"
+    ID_VIEW_VGALAYERS_SHOW  "Show VGA layer"
+    ID_VIEW_AXIALLAYERS_SHOW "Show/hide axial map layers"
+    ID_VIEW_AXIALLAYERS_BRINGTOTOP "Bring axial map layers to top"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_VGA_SHOW        "Show/hide VGA layers"
+    ID_VIEW_TABLE           "View the attributes table\nView Table"
+    ID_VIEW_DISPLAYTEXT     "Display Text Values on Screen\nDisplay Te&xt"
+    ID_VIEW_CENTREVIEW      "Fit map to window\nRecentre"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_SEMIFILL        "Fills context points that are analysed at low resolution\nContext fill"
+    ID_HELP_GRAPH_VERSION   "The file format version of this graph\nGraph Version"
+    ID_ADD_COLUMN           "Add column to the active map\nAdd Column"
+    ID_REMOVE_COLUMN        "Remove column from the active map\nRemove column"
+    ID_MAGIMIF              "Convert lines to polygons and export as mif/mid\nExport polygons"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_BINDISTANCES         "Quick calculate bin distances\nBin distances"
+    ID_FILE_PROPERTIES      "Edit graph workspace properties\nWorkspace Properties"
+    TOOLS_IMPORT            "Import a Depthmap analysis package from a DLL\nImport analysis"
+    ID_TOOLS_APD            "Angular distance from current selection\nAngular Depth"
+    ID_TOOLS_AXIAL_MAKEGATES 
+                            "Convert shapes in the currently displayed drawing layers"
+    ID_VIEW_SUMMARY         "Show summarised attribute information for selected points"
+    ID_SWAP_COLOURS         "Invert the colour range\nInvert Colour Range"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NO                   "Don't press this button"
+    ID_RED_BUTTON           "A big red button"
+    ID_UPDATE_COLUMN        "Replace column contents using a SalaScript command\nUpdate Column"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOLS_POINT_CONSHAPEMAP 
+                            "Convert displayed data map lines to merge points for current visibility graph"
+    ID_TOOLS_AXIAL_CONVSHAPEMAP 
+                            "Convert displayed data map points to unlinks for current axial map"
+    ID_VIEW_LINEWIDTH       "Override the default line width setting"
+    ID_VIEW_POINTSIZE       "Override the default point size setting"
+    ID_TREND_LINE           "Show trend line\nTrend Line"
+    ID_R_SQUARED            "Show R-squared correlation coefficient\nR-Squared"
+    ID_VIEW_TREND_LINE      "Show regression line\nView trend line"
+    ID_VIEW_COLOR           "Toggle colour display on and off\nToggle Colour"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_3D_ROT_VIEW          "Rotate map about its centre\nRotate Map"
+    ID_ADD_AGENT            "Set an agent running in the map\nAdd Agent"
+    ID_3D_PAN               "Pan map up, down, left and right\nPan Map"
+    ID_3D_ZOOM              "Zoom in / out of map\nZoom"
+    ID_3D_PAUSE             "Quick Pause!"
+    ID_AGENT_TRAILS         "Show agent trails\nShow Trails"
+    ID_TOOLS_LINE_LOADUNLINKSFROMFILE "Load unlink reference pairs from file"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOLS_LINE_CONVSHAPEMAPE 
+                            "Convert the currently displayed data map into an axial map (original is retained)"
+    ID_TOOLS_SEGMENT_CONVSHAPEMAP 
+                            "Convert the currently displayed data map into an axial map (original is retained)"
+    ID_RENAME_COLUMN        "Rename the currently displayed attribute"
+    ID_SELECT_QUERY         "Make a selection using a SalaScript query\nQuery"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_ORIGIN          "Toggle graph intersect at origin of X, Y values\nToggle origin on/off"
+    ID_MAKE_ISOVIST         "Make isovist"
+    ID_MODE_ISOVIST         "Make a new isovist"
+    ID_COLUMN_PROPERTIES    "Summary statistics for the active attribute"
+    ID_HELP_TUTORIALS       "View the UCL Depthmap tutorials online"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_HELP_ALERTS          "View UCL Depthmap alerts online"
+    ID_LAYER_NEW            "Create a new map"
+    ID_LAYER_DELETE         "Delete the active map"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_HELP_SALA_MANUAL     "View the SalaScript Manual online"
+    ID_LAYER_CONVERT        "Create a new map from the active map"
+    ID_LAYER_CONVERT_DRAWING 
+                            "Create a new map from the displayed drawing maps"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_FINDLOC         "Find a location or selected objects within the map\nFind Objects"
+    ID_EDIT_SELECT_TO_LAYER "Convert the current selection to a new map layer"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_ZOOMSEL         "Zoom in around current selection\nZoom to Selection"
+    ID_CONVERT_MAP_SHAPES   "Convert shapes to other shapes within the current map"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_RESEARCH_TOOLBAR    BITMAP                  "res\\toolbar1.bmp"
+IDR_3D_NAV              BITMAP                  "res\\bmp00007.bmp"
+IDB_STATEICONS2         BITMAP                  "res\\stateico.bmp"
+IDR_MAP_TOOLBAR         BITMAP                  "res\\bmp00006.bmp"
+IDB_SIDETREEICONS       BITMAP                  "res\\bmp00001.bmp"
+IDB_MAP_BAR_COLD        BITMAP                  "res\\map_bar.bmp"
+IDB_MAP_BAR_HOT         BITMAP                  "res\\map_bar_.bmp"
+IDB_COLUMNHEADERICONS   BITMAP                  "res\\columnhe.bmp"
+IDB_SIDEICONS3          BITMAP                  "res\\bmp00002.bmp"
+IDB_SIDELISTICONS       BITMAP                  "res\\sidetree.bmp"
+TICKBOXU                BITMAP                  "res\\bitmap1.bmp"
+CANCELBOXU              BITMAP                  "res\\bitmap2.bmp"
+CANCELBOXD              BITMAP                  "res\\cancelbo.bmp"
+TICKBOXD                BITMAP                  "res\\tickboxu.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_RESEARCH_TOOLBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_EDIT_FIXFILL
+    BUTTON      ID_BINDISPLAY
+    SEPARATOR
+    BUTTON      ID_EVOAGENT
+    SEPARATOR
+    BUTTON      ID_TESTBUTTON
+    BUTTON      ID_REDTEST
+    BUTTON      ID_GREENTEST
+    BUTTON      ID_PINKTEST
+    BUTTON      ID_MAGIMIF
+    BUTTON      ID_BINDISTANCES
+    BUTTON      ID_SHOW_BINDISTANCES
+    SEPARATOR
+    BUTTON      ID_RED_BUTTON
+    BUTTON      ID_BLAH
+    BUTTON      ID_DEL_BUTTON
+END
+
+IDR_3D_NAV TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_TOOLS_IMPORT_TRACES
+    BUTTON      ID_ADD_AGENT
+    SEPARATOR
+    BUTTON      ID_TOOLS_AGENTS_PLAY
+    BUTTON      ID_TOOLS_AGENTS_PAUSE
+    BUTTON      ID_TOOLS_AGENTS_STOP
+    SEPARATOR
+    BUTTON      ID_AGENT_TRAILS
+    SEPARATOR
+    BUTTON      ID_3D_ROT
+    BUTTON      ID_3D_PAN
+    BUTTON      ID_3D_ZOOM
+    BUTTON      ID_3D_PLAY_LOOP
+    SEPARATOR
+    BUTTON      ID_3D_FILLED
+END
+
+IDR_MAP_TOOLBAR TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_EDIT_SELECT
+    BUTTON      ID_VIEW_MOVE
+    BUTTON      ID_VIEW_ZOOM_IN
+    BUTTON      ID_VIEW_ZOOM_OUT
+    SEPARATOR
+    BUTTON      ID_VIEW_ZOOMSEL
+    BUTTON      ID_VIEW_CENTREVIEW
+    SEPARATOR
+    BUTTON      ID_EDIT_GRID
+    BUTTON      ID_EDIT_FILL
+    BUTTON      ID_EDIT_PENCIL
+    SEPARATOR
+    BUTTON      ID_EDIT_LINETOOL
+    BUTTON      ID_EDIT_POLYGON
+    SEPARATOR
+    BUTTON      ID_MODE_ISOVIST
+    BUTTON      ID_MODE_HALFOVIST
+    SEPARATOR
+    BUTTON      ID_TOOLS_AL2
+    BUTTON      ID_TOOLS_PD
+    BUTTON      ID_MODE_JOIN
+    BUTTON      ID_MODE_UNJOIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_SIDEBAR MENU 
+BEGIN
+    POPUP "_POPUP0_"
+    BEGIN
+        MENUITEM "&Rename...",                  ID_POPUP_SIDEBAR_MAP_RENAME
+        MENUITEM "&Delete",                     ID_POPUP_SIDEBAR_MAP_DELETE
+    END
+    POPUP "_POPUP1_"
+    BEGIN
+        MENUITEM "&Rename...",                  ID_POPUP_SIDEBAR_ATTR_RENAME
+        MENUITEM "&Edit...",                    ID_POPUP_SIDEBAR_ATTR_UPDATE
+        MENUITEM "&Delete",                     ID_POPUP_SIDEBAR_ATTR_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties...",              ID_POPUP_SIDEBAR_ATTR_PROPERTIES
+    END
+    POPUP "_POPUP2_"
+    BEGIN
+        MENUITEM "&Properties...",              ID_POPUP_SIDEBAR_ATTR_PROPERTIES
+    END
+END
+
+IDR_POPUP_MAPBAR MENU 
+BEGIN
+    POPUP "_POPUP0_"
+    BEGIN
+        MENUITEM "&Zoom In",                    ID_MAPBAR_ZOOM_IN
+        MENUITEM "&Zoom Out",                   ID_MAPBAR_ZOOM_OUT
+    END
+    POPUP "_POPUP1_"
+    BEGIN
+        MENUITEM "&Standard Fill",              ID_MAPBAR_FILL
+        MENUITEM "&Context Fill",               ID_MAPBAR_SEMIFILL
+    END
+    POPUP "_POPUP2_"
+    BEGIN
+        MENUITEM "&Line",                       ID_MAPBAR_LINE
+        MENUITEM "&Polygon",                    ID_MAPBAR_POLYGON
+    END
+    POPUP "_POPUP3_"
+    BEGIN
+        MENUITEM "&Isovist",                    ID_MAPBAR_ISOVIST
+        MENUITEM "&Partial Isovist",            ID_MAPBAR_HALFOVIST
+    END
+    POPUP "_POPUP4_"
+    BEGIN
+        MENUITEM "&Link",                       ID_MAPBAR_JOIN
+        MENUITEM "&Unlink",                     ID_MAPBAR_UNJOIN
+    END
+    POPUP "_POPUP_TODO_"
+    BEGIN
+        MENUITEM "&Box",                        ID_MAPBAR_BOX
+        MENUITEM "Pol&yline",                   ID_MAPBAR_POLYLINE
+    END
+END
+
+IDR_EXTRA_EVENTS MENU 
+BEGIN
+    POPUP "Anything"
+    BEGIN
+        MENUITEM "Show Research Toolbar",       ID_SHOW_RESEARCHTOOLBAR
+    END
+END
+
+IDR_NON_MENU_COMMANDS MENU 
+BEGIN
+    POPUP "Dummy"
+    BEGIN
+        MENUITEM "Import Agent Traces",         ID_TOOLS_IMPORT_TRACES
+        MENUITEM "Play Agents",                 ID_TOOLS_AGENTS_PLAY
+        MENUITEM "Pause Agents",                ID_TOOLS_AGENTS_PAUSE
+        MENUITEM "Stop Agents",                 ID_TOOLS_AGENTS_STOP
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SPLASH DIALOGEX 0, 0, 280, 153
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER
+FONT 8, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    CONTROL         204,IDC_STATIC,"Static",SS_BITMAP | SS_REALSIZEIMAGE,0,0,280,153
+    LTEXT           "Copyright info (inserted at runtime)",IDC_COPYRIGHT_INFO,0,135,279,18
+END
+
+IDD_WAIT_DIALOG DIALOG  0, 0, 186, 82
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Please wait"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Background",IDC_BACKGROUND,75,61,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,61,50,14
+    LTEXT           "Information\nLine Two",IDC_INFORMATION,7,42,172,18
+    LTEXT           "Description",IDC_DESCRIPTION,7,7,172,8
+    CONTROL         "Progress1",IDC_PROGRESS_BAR,"msctls_progress32",0x1,31,26,123,9
+END
+
+IDD_LICENCE_DIALOG DIALOGEX 0, 0, 266, 172
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Depthmap"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,6,7,21,20
+    LTEXT           "Welcome to Depthmap",IDC_STATIC,35,7,74,8
+    DEFPUSHBUTTON   "Accept",IDOK,153,151,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,209,151,50,14
+    LTEXT           "Licence message",IDC_MESSAGE,35,22,218,18
+    EDITTEXT        IDC_LICENCE_BOX,33,46,226,96,ES_MULTILINE | ES_READONLY | WS_VSCROLL | NOT WS_TABSTOP
+END
+
+IDD_GRID_DIALOG DIALOG  0, 0, 155, 77
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Set Grid Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_GRID_SIZE,45,18,66,14,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Spin1",IDC_SPIN_SPACING,"msctls_updown32",UDS_ARROWKEYS,114,18,11,14
+    DEFPUSHBUTTON   "OK",IDOK,41,56,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,98,56,50,14
+    LTEXT           "&Spacing",IDC_STATIC,7,18,34,14,SS_CENTERIMAGE
+END
+
+IDD_ANALYSIS_OPTIONS DIALOGEX 0, 0, 208, 191
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Analysis Options"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Calculate isovist properties",IDC_OUTPUT_TYPE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,14,19,178,10
+    CONTROL         "Calculate visibility relationships",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,14,34,111,10
+    CONTROL         "Calculate metric relationships",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,14,79,107,10
+    CONTROL         "Calculate angular relationships",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,14,108,107,10
+    CONTROL         "Calculate through vision",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,14,124,129,10
+    CONTROL         "Include &global measures radius",IDC_GLOBAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,49,113,10
+    EDITTEXT        IDC_RADIUS,135,48,24,12,ES_AUTOHSCROLL
+    CONTROL         "Include &local measures",IDC_LOCAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,63,88,10
+    LTEXT           "Radius",IDC_STATIC,23,94,28,8
+    EDITTEXT        IDC_RADIUS2,52,92,34,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,95,170,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,151,170,50,14
+    GROUPBOX        "Analysis Type",IDC_STATIC,7,7,194,152
+    COMBOBOX        IDC_LAYER_SELECTOR,135,137,52,35,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Record gate counts in data map",IDC_STATIC,26,139,106,8
+END
+
+IDD_MAKE_OPTIONS DIALOG  0, 0, 159, 63
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Make Graph Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Make boundary graph",IDC_BOUNDARYGRAPH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,24,145,10
+    DEFPUSHBUTTON   "OK",IDOK,48,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,102,42,50,14
+    CONTROL         "Restrict visibile distance to ",IDC_RESTRICT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,9,101,10
+    EDITTEXT        IDC_MAXDIST,112,7,40,14,ES_AUTOHSCROLL | WS_DISABLED
+END
+
+IDD_EDIT_CONNECTIONS DIALOG  0, 0, 172, 151
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Connections"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "&Add connections",IDC_TYPE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,26,20,69,10
+    CONTROL         "&Merge connections",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,26,33,77,10
+    CONTROL         "&Break connections",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,26,46,75,10
+    CONTROL         "&Selected area",IDC_SEL_TO_PIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,84,60,10
+    CONTROL         "&Pinned area",IDC_PIN_TO_SEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,101,54,10
+    DEFPUSHBUTTON   "OK",IDOK,57,130,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,115,130,50,14
+    GROUPBOX        "Apply the change to",IDC_STATIC,7,68,158,52
+    GROUPBOX        "Change to make",IDC_STATIC,7,7,158,57
+END
+
+IDD_COLOUR_SCALE DIALOGEX 0, 0, 176, 175
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "UCL Depthmap - Set Colour Scale"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COLOR,7,6,162,63,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Slider2",IDC_BLUE_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,7,26,162,12,WS_EX_STATICEDGE
+    CONTROL         "Slider1",IDC_RED_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,7,66,162,12,WS_EX_STATICEDGE
+    LTEXT           "Blue",IDC_BLUE,7,47,21,8
+    EDITTEXT        IDC_BLUE_VALUE,35,44,134,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "Red",IDC_RED,7,88,21,8
+    EDITTEXT        IDC_RED_VALUE,35,85,134,14,ES_RIGHT | ES_AUTOHSCROLL | WS_DISABLED
+    DEFPUSHBUTTON   "Apply",IDOK,7,154,50,14
+    PUSHBUTTON      "Close",IDCANCEL,119,154,50,14
+    CONTROL         "Show polygon edges",IDC_SHOW_LINES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,108,162,10
+    CONTROL         "Show polygons filled",IDC_SHOW_FILL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,135,162,10
+    CONTROL         "Show polygon centroids",IDC_SHOW_CENTROIDS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,122,162,10
+    PUSHBUTTON      "Apply to All",IDC_APPLYTOALL,63,154,50,14
+END
+
+IDD_ATTRIBUTE_SUMMARY DIALOG  0, 0, 368, 188
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Attribute Summary"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,311,167,50,14
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | WS_BORDER | WS_TABSTOP,7,7,354,153
+END
+
+IDD_PUSH_DIALOG DIALOGEX 0, 0, 208, 170
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Push Values to Map"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_LAYER_SELECTOR,7,80,194,68,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,95,149,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,151,149,50,14
+    LTEXT           "Push values to",IDC_STATIC,7,69,48,8
+    LTEXT           "Origin map",IDC_STATIC,7,7,34,8
+    LTEXT           "Origin attribute",IDC_STATIC,7,38,46,8
+    LTEXT           "If destination object intersects more than one object in origin map",IDC_STATIC,7,97,194,17
+    COMBOBOX        IDC_HOWTO,7,116,194,53,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Record object intersection count",IDC_COUNT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,135,119,10
+    EDITTEXT        IDC_ORIGIN_LAYER,7,18,194,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ORIGIN_ATTRIBUTE,7,49,194,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_ATTRIBUTE_CHOOSER DIALOG  0, 0, 186, 76
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Attribute"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_ATTRIBUTE,44,24,135,42,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,72,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,55,50,14
+    LTEXT           "Attribute\nAtrribute",IDC_TEXT,7,7,172,16
+    LTEXT           "Attribute",IDC_STATIC,7,27,34,8
+END
+
+IDD_ALERT DIALOG  0, 0, 214, 150
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "UCL Depthmap Alert"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Continue",IDOK,157,128,50,14
+    CONTROL         "I have read this message, please do not display it again",IDC_READ_IT,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,112,189,10
+    CONTROL         "",IDC_MESSAGE,"RICHEDIT",TCS_HOTTRACK | TCS_RAGGEDRIGHT | TCS_MULTISELECT | WS_BORDER | WS_VSCROLL | WS_TABSTOP,7,7,200,73
+    LTEXT           "To see this and other Depthmap alerts, please visit:",IDC_STATIC,7,84,162,8
+    LTEXT           "http://www.vr.ucl.ac.uk/depthmap/alerts",IDC_ALERT_LINK,7,97,132,8,SS_NOTIFY
+END
+
+IDD_NEW_LAYER DIALOGEX 0, 0, 167, 74
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Map"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Map type",IDC_STATIC,7,12,41,8
+    COMBOBOX        IDC_LAYER_TYPE,51,9,109,58,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Name",IDC_STATIC,7,32,39,8
+    EDITTEXT        IDC_NAME,51,28,109,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,55,53,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,53,50,14
+END
+
+IDD_MAKE_LAYER DIALOGEX 0, 0, 258, 162
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Create New Map"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Orgin Map",IDC_STATIC,7,7,244,8
+    EDITTEXT        IDC_ORGIN_LAYERS,7,17,244,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "New Map Type",IDC_STATIC,7,35,244,8
+    COMBOBOX        IDC_LAYER_TYPE,7,45,244,55,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "New Map Name",IDC_STATIC,7,61,244,8
+    EDITTEXT        IDC_LAYER_NAME,7,72,244,14,ES_AUTOHSCROLL
+    CONTROL         "Copy attributes to new map",IDC_PUSH_VALUES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,106,244,10
+    CONTROL         "Remove axial stubs less than",IDC_REMOVE_STUBS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,122,107,10
+    EDITTEXT        IDC_PERCENTAGE_LENGTH,117,120,26,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "% of line length",IDC_REMOVE_STUBS_MORE,146,123,69,8
+    DEFPUSHBUTTON   "OK",IDOK,145,141,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,201,141,50,14
+    CONTROL         "Retain original map",IDC_KEEPORIGINAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,91,76,10
+END
+
+IDD_LAYER_CHOOSER DIALOG  0, 0, 186, 76
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Choose Layer"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_LAYER,44,24,135,42,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,72,55,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,55,50,14
+    LTEXT           "Layer\nLayer",IDC_TEXT,7,7,172,16
+    LTEXT           "Layer",IDC_STATIC,7,27,34,8
+END
+
+IDD_DEPTHMAP_OPTIONS DIALOGEX 0, 0, 186, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Depthmap Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,74,53,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,53,50,14
+    CONTROL         "Show research toolbar",IDC_SHOW_RESEARCH_TOOLBAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,24,88,10
+END
+
+IDD_FINDLOC DIALOGEX 0, 0, 158, 74
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Find Location"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,43,53,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,53,50,14
+    EDITTEXT        IDC_EDITX,31,7,106,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITY,31,29,106,14,ES_AUTOHSCROLL
+    LTEXT           "x",IDC_STATIC,15,10,8,8
+    LTEXT           "y",IDC_STATIC,15,32,8,8
+END
+
+IDD_SET_ATTR_VALUE DIALOGEX 0, 0, 100, 12
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_BORDER
+EXSTYLE WS_EX_TOPMOST | WS_EX_TOOLWINDOW
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "TICKBOX",IDOK,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,74,0,11,10
+    CONTROL         "CANCELBOX",IDCANCEL,"Button",BS_OWNERDRAW | BS_BITMAP | WS_TABSTOP,87,0,11,10
+    EDITTEXT        IDC_VALUE,0,0,72,12,ES_AUTOHSCROLL,WS_EX_RIGHT
+END
+
+IDD_ISOVISTPATH DIALOGEX 0, 0, 186, 78
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Isovist Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,57,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,57,50,14
+    LTEXT           "Isovist field of view",IDC_STATIC,7,14,63,8
+    COMBOBOX        IDC_FOV,7,26,172,52,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_CONVERT_SHAPES DIALOGEX 0, 0, 186, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Convert Map Shapes"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CONVERSION_TYPE,7,7,172,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Polygon radius",IDC_STATIC,7,25,59,8
+    EDITTEXT        IDC_RADIUS,78,23,40,14,ES_AUTOHSCROLL
+    CONTROL         "Apply to selected shapes only",IDC_SELECTED_ONLY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,42,111,10
+    DEFPUSHBUTTON   "OK",IDOK,75,63,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,63,50,14
+END
+
+IDD_TOPOMET DIALOGEX 0, 0, 186, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Analysis Options"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Analysis Type",IDC_STATIC,7,7,172,39
+    CONTROL         "Topological (Axial)",IDC_TOPOLOGICAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,11,18,74,10
+    CONTROL         "Metric (Physical Distance)",IDC_METRIC,"Button",BS_AUTORADIOBUTTON,11,30,97,10
+    LTEXT           "Radius (Metric units)",IDC_STATIC,7,52,66,8
+    EDITTEXT        IDC_RADIUS,81,50,98,14,ES_AUTOHSCROLL
+    CONTROL         "Selected segments only\n(Note: does not perform choice calculation)",IDC_SELECTED_ONLY,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,7,68,172,22
+    DEFPUSHBUTTON   "OK",IDOK,75,93,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,93,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_WAIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_LICENCE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 259
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 165
+    END
+
+    IDD_GRID_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_ANALYSIS_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_MAKE_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_EDIT_CONNECTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_COLOUR_SCALE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 169
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_ATTRIBUTE_SUMMARY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_PUSH_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_ATTRIBUTE_CHOOSER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_ALERT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_NEW_LAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_MAKE_LAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_LAYER_CHOOSER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_DEPTHMAP_OPTIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_FINDLOC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 67
+    END
+
+    IDD_ISOVISTPATH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_CONVERT_SHAPES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_TOPOMET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 107
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_NEW_LAYER DLGINIT
+BEGIN
+    IDC_LAYER_TYPE, 0x403, 9, 0
+0x6144, 0x6174, 0x4d20, 0x7061, "\000" 
+    IDC_LAYER_TYPE, 0x403, 11, 0
+0x6f43, 0x766e, 0x7865, 0x4d20, 0x7061, "\000" 
+    IDC_LAYER_TYPE, 0x403, 10, 0
+0x7841, 0x6169, 0x206c, 0x614d, 0x0070, 
+    IDC_LAYER_TYPE, 0x403, 9, 0
+0x6550, 0x6873, 0x4d20, 0x7061, "\000" 
+    0
+END
+
+IDD_PUSH_DIALOG DLGINIT
+BEGIN
+    IDC_HOWTO, 0x403, 29, 0
+0x6154, 0x656b, 0x6d20, 0x7861, 0x6d69, 0x6d75, 0x6120, 0x7474, 0x6972, 
+0x7562, 0x6574, 0x7620, 0x6c61, 0x6575, "\000" 
+    IDC_HOWTO, 0x403, 29, 0
+0x6154, 0x656b, 0x6d20, 0x6e69, 0x6d69, 0x6d75, 0x6120, 0x7474, 0x6972, 
+0x7562, 0x6574, 0x7620, 0x6c61, 0x6575, "\000" 
+    IDC_HOWTO, 0x403, 29, 0
+0x6154, 0x656b, 0x6120, 0x6576, 0x6172, 0x6567, 0x6120, 0x7474, 0x6972, 
+0x7562, 0x6574, 0x7620, 0x6c61, 0x6575, "\000" 
+    IDC_HOWTO, 0x403, 31, 0
+0x6154, 0x656b, 0x7420, 0x746f, 0x6c61, 0x6f20, 0x2066, 0x7461, 0x7274, 
+0x6269, 0x7475, 0x2065, 0x6176, 0x756c, 0x7365, "\000" 
+    0
+END
+
+IDD_ISOVISTPATH DLGINIT
+BEGIN
+    IDC_FOV, 0x403, 29, 0
+0x7551, 0x7261, 0x6574, 0x2072, 0x7369, 0x766f, 0x7369, 0x2074, 0x3928, 
+0x2030, 0x6564, 0x7267, 0x6565, 0x2973, "\000" 
+    IDC_FOV, 0x403, 29, 0
+0x5420, 0x6968, 0x6472, 0x6920, 0x6f73, 0x6976, 0x7473, 0x2820, 0x3231, 
+0x2030, 0x6564, 0x7267, 0x6565, 0x2973, "\000" 
+    IDC_FOV, 0x403, 28, 0
+0x4820, 0x6c61, 0x2066, 0x7369, 0x766f, 0x7369, 0x2074, 0x3128, 0x3038, 
+0x6420, 0x6765, 0x6572, 0x7365, 0x0029, 
+    IDC_FOV, 0x403, 28, 0
+0x4620, 0x6c75, 0x206c, 0x7369, 0x766f, 0x7369, 0x2074, 0x3328, 0x3036, 
+0x6420, 0x6765, 0x6572, 0x7365, 0x0029, 
+    0
+END
+
+IDD_CONVERT_SHAPES DLGINIT
+BEGIN
+    IDC_CONVERSION_TYPE, 0x403, 27, 0
+0x6f43, 0x766e, 0x7265, 0x2074, 0x6f70, 0x6e69, 0x7374, 0x7420, 0x206f, 
+0x6f70, 0x796c, 0x6f67, 0x736e, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND_CURSOR         CURSOR                  "res\\cursor1.cur"
+IDC_ZOOM_IN             CURSOR                  "res\\cur00001.cur"
+IDC_ZOOM_OUT            CURSOR                  "res\\zoom_in1.cur"
+IDC_FILL_CURSOR         CURSOR                  "res\\cur00002.cur"
+IDC_PENCIL              CURSOR                  "res\\cur00003.cur"
+IDC_LINKCURSOR          CURSOR                  "res\\cur00004.cur"
+IDC_LINKCURSOR1         CURSOR                  "res\\linkcurs.cur"
+IDC_SEED_CURSOR         CURSOR                  "res\\fill_cur.cur"
+IDC_LINKCURSOR2         CURSOR                  "res\\cur00007.cur"
+IDC_MOVE_CURSOR         CURSOR                  "res\\hand_cur.cur"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Depthmap.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    ID_BLAH                 "Blah button"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_POPUP_SIDEBAR_MAP_DELETE "Delete this map"
+    ID_POPUP_SIDEBAR_RENAME_MAP "Rename this map"
+    ID_POPUP_SIDEBAR_RENAME_ATTR "Rename this attribute"
+    ID_POPUP_SIDEBAR_DEL_ATTR "Delete this attribute"
+    ID_POPUP_SIDEBAR_ATTR_RENAME "Delete this attribute"
+    ID_POPUP_SIDEBAR_ATTR_DELETE "Delete this attribute"
+    ID_POPUP_SIDEBAR_ATTR_UPDATE "Replace the contents of this attribute"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MODE_ISOVIST         "Make a new isovist\nIsovist"
+    ID_SIDEBAR_ATTR_PROPERTIES "Display formula used to create this column"
+    ID_POPUP_SIDEBAR_PROPERTIES "Show attribute properties..."
+    ID_POPUP_SIDEBAR_ATTR_PROPERTIES "Show column properties..."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_FILL            "Fill grid spaces with points\nFill"
+    ID_VIEW_ZOOM_IN         "Zoom into or out of (using Alt-key) view of map\nZoom In"
+    ID_VIEW_ZOOM_OUT        "Zoom out of or into (using Alt-key) view of map\nZoom Out"
+    ID_EDIT_SELECT          "Select a grid point\nSelect"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_MOVE            "Click and drag to move map\nDrag"
+    ID_VIEW_ZOOM            "Zoom into or out of (using Alt-key) view of map\nZoom"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_GRID            "Overlay grid on plan\nSet Grid"
+    ID_MODE_JOIN            "Link lines / merge points together\nLink"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_PENCIL          "Fill grid spaces individually (or click on a filled space to clear)\nPencil"
+    ID_TOOLS_PD             "Step depth from current selection\nStep Depth"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOLS_AL2            "Construct all line axial map from a seed point\nAxial Map"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MAPBAR_ZOOM_IN       "Select the zoom in tool"
+    ID_MAPBAR_ZOOM_OUT      "Select the zoom out tool"
+    ID_MAPBAR_FILL          "Select standard fill mode"
+    ID_MAPBAR_SEMIFILL      "Select chequerboard fill mode"
+    ID_MAPBAR_JOIN          "Select link line / merge point tool"
+    ID_MAPBAR_UNJOIN        "Select unlink line / unmerge point tool"
+    ID_MODE_UNJOIN          "Unlink lines / unmerge points\nUnlink"
+    ID_MODE_HALFOVIST       "Make a new partial isovist\nPartial Isovist"
+    ID_MAPBAR_ISOVIST       "Select link isovist tool"
+    ID_MAPBAR_HALFOVIST     "Select half isovist tool"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_LINETOOL        "Draw a new line\nLine"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MAPBAR_LINE          "Select draw line tool"
+    ID_MAPBAR_POLYGON       "Select draw polygon tool"
+    ID_EDIT_POLYGON         "Draw a new polygon\nPolygon"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_CENTREVIEW      "Fit map to window\nRecentre"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOLS_IMPORT_TRACES  "Import agent traces from a file\nImport Traces"
+    ID_TOOLS_AGENTS_PLAY    "Play agents\nPlay agents"
+    ID_TOOLS_AGENTS_PAUSE   "Pause agents\nPause Agents"
+    ID_TOOLS_AGENTS_STOP    "Stop agents\nStop Agents"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_ZOOMSEL         "Zoom in on current selected items\nZoom to Selection"
+END
+
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Depthmap.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
